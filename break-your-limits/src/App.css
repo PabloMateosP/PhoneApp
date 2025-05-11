@@ -1,0 +1,241 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Estilos para el footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  border-top: 1px solid #333;
+  padding: 10px 0;
+  z-index: 50;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+  display: flex;
+  justify-content: space-around; /* Espaciado entre los íconos */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  padding: 20px;
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:focus {
+  background-color: grey;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  color: #000;
+  border-radius: 40px;
+}
+
+nav a.active {
+  background-color: grey;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+nav img {
+  width: 24px; /* Ajusta el tamaño de los íconos */
+  height: 24px;
+}
+
+/*-------------------------------*/
+/* ----------- SETUP ----------- */
+/*-------------------------------*/
+
+/* Estilo del contenedor del setup */
+.setup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+  color: white;
+  border-radius: 20px;
+}
+
+/* Título del setup */
+.setup-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Inputs del formulario */
+.setup-container input {
+  width: 90%;
+  max-width: 350px;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  outline: none;
+}
+
+/* Botón del formulario */
+.setup-container button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.setup-container button:hover {
+  background-color: #45a049;
+} 
+
+/*-------------------------------*/
+/* ------------ ADD ------------ */
+/*-------------------------------*/
+
+.add-container {
+  padding-bottom: 80px; /* para que no se tape con el footer */
+  color: white;
+}
+
+.dias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.dia-card {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.dia-card:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+.dia-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.dia-card p {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/*-------------------------------*/
+/* ------------ ADD DAY -------- */
+/*-------------------------------*/
+
+.addDay-container {
+  padding-bottom: 80px;
+}
+
+/* Estilo para la tarjeta */
+.addDay-card {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen a la izquierda */
+.addDay-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Contenido a la derecha de la imagen */
+.addDay-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Títulos y datos */
+.addDay-card-content h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.addDay-card-content p {
+  font-size: 1rem;
+  margin: 0;
+}
